@@ -172,6 +172,9 @@ svc.user.account = 'username';
 svc.user.password = 'password';
 ...
 ```
+> WARNING: When installing the service the password supplied will be written in plain text to the
+xml configuration file for winsw, it appears you can safely remove the 'serviceaccount' node of this
+file once the service is installed though (you cannot delete the file completely though).
 
 Both the account and password must be explicitly defined if you want the service module to
 run commands as a specific user. By default, it will run using the user account that launched
